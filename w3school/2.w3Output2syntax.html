@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3-JS Output to</title>
+</head>
+
+<body>
+
+    <mark>A computer program is a list of "instructions" to be "executed" by a computer.
+
+        In a programming language, these programming instructions are called statements.
+
+        A JavaScript program is a list of programming statements.In HTML, JavaScript programs are executed by the web
+        browser.</mark>
+    <!-- JavaScript Output -->
+    <h2>JavaScript Display Possibilities</h2>
+    <ul>
+        <li>Writing into an HTML element, using <mark>innerHTML.</mark></li>
+        <li>Writing into the HTML output using <mark>document.write().</mark></li>
+        <li>Writing into an alert box, using <mark>window.alert().</mark></li>
+        <li>Writing into the browser console, using <mark>console.log()</mark> </li>
+    </ul>
+
+    <h2>Using innerHTML</h2>
+    <h2>My First Web Page</h2>
+    <p>My First Paragraph.</p>
+
+    <p id="demo7"></p>
+
+    <script>
+        document.getElementById("demo7").innerHTML = 5 + 6;
+    </script>
+
+    <p>Never call <b>document.write</b> after the document has finished loading.
+        It will overwrite the whole document.</p>
+
+    <h2>Using document.write() after an HTML document is loaded, will delete all existing HTML:</h2>
+    <script>
+        document.write(55 + 65);
+    </script>
+    <br><br>
+
+    <button type="button" onclick="document.write(5 + 6)">Try it</button>
+    <br>
+    <p>The document.write() method should only be used for testing.</p>
+    <script>
+        window.alert(54 + 6);
+    </script>
+
+    <script>
+        alert(5 + 6666);
+    </script>
+
+    <b>For debugging purposes, you can call the console.log() method in the browser to display data.</b>
+
+    <script>
+        console.log(5 + 6);
+    </script>
+
+
+    <h2>The window.print() Method</h2>
+
+    <p>Click the button to print the current page.</p>
+
+    <button onclick="window.print()">Print this page</button>
+
+
+    <!-- JavaScript Statements -->
+    <h2>JavaScript Statements</h2>
+
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+    <p id="demo8"></p>
+
+    <script>
+        let x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+
+        document.getElementById("demo8").innerHTML =
+            "The value of z is " + z + ".";  
+    </script>
+
+    <p>In HTML, JavaScript statements are executed by the browser.</p>
+
+    <p id="demo9"></p>
+
+    <script>
+        document.getElementById("demo9").innerHTML = "Hello Dolly.";
+    </script>
+
+    <p>JavaScript statements are separated by semicolons.</p>
+
+    <p id="demo10"></p>
+
+    <script>
+        let a, b, c;
+        a = 5;
+        b = 56;
+        c = a + b;
+        document.getElementById("demo10").innerHTML = c;
+    </script>
+
+    <p>Multiple statements on one line are allowed.</p>
+
+    <!-- <p id="demo1"></p> -->
+
+    <!-- <script>
+let a, b, c;
+a = 5; b = 6; c = a + b;
+document.getElementById("demo1").innerHTML = c;
+</script> -->
+
+    <p>
+        The best place to break a code line is after an operator or a comma.
+    </p>
+
+    <p id="demo11"></p>
+
+    <script>
+        document.getElementById("demo11").innerHTML =
+            "Hello Dolly!";
+    </script>
+
+    <h2>JavaScript Statements</h2>
+
+    <p>JavaScript code blocks are written between { and }</p>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+    <p id="demo13"></p>
+    <p id="demo12"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo13").innerHTML = "Hello Dolly!";
+            document.getElementById("demo12").innerHTML = "How are you?";
+        }
+    </script>
+
+    <!-- JavaScript Syntax -->
+    <mark>JavaScript syntax is the set of rules, how JavaScript programs are constructed:</mark>
+    <p>The JavaScript syntax defines two types of values:</p>
+    <ul>
+        <li>
+            Fixed values are called Literals.
+        </li>
+        <li>ariable values are called Variables.</li>
+    </ul>
+
+    <h2>JavaScript Numbers</h2>
+
+    <p>Number can be written with or without decimals.</p>
+
+    <p id="demo14"></p>
+
+    <script>
+        document.getElementById("demo14").innerHTML = 10.50;
+    </script>
+
+    <h2>JavaScript Strings</h2>
+
+    <p>Strings can be written with double or single quotes.</p>
+
+    <p id="demo15"></p>
+
+    <script>
+        document.getElementById("demo15").innerHTML = 'John Doe';
+    </script>
+
+    <h2>JavaScript Variables</h2>
+
+    <p>In this example, x is defined as a variable.
+        Then, x is assigned the value of 6:</p>
+
+    <p id="demo16"></p>
+
+    <script>
+        let x2;
+        x2 = 6;
+        document.getElementById("demo16").innerHTML = x2;
+    </script>
+
+    <h2>JavaScript Operators</h2>
+
+    <p>JavaScript uses arithmetic operators to compute values (just like algebra).</p>
+
+    <p id="demo17"></p>
+
+    <script>
+        document.getElementById("demo17").innerHTML = (5 + 6) * 10;
+    </script>
+
+    <h2>Assigning JavaScript Values</h2>
+
+    <p>In JavaScript the = operator is used to assign values to variables.</p>
+
+    <p id="demo18"></p>
+
+    <script>
+        let x3, y3;
+        x3 = 5;
+        y3 = 6;
+        document.getElementById("demo18").innerHTML = x3 + y3;
+    </script>
+
+    <h2>JavaScript Expressions</h2>
+
+    <p>Expressions compute to values.</p>
+
+    <p id="demo19"></p>
+
+    <script>
+        document.getElementById("demo19").innerHTML = 5 * 10;
+    </script>
+
+    <p id="demo20"></p>
+
+    <script>
+        var x4;
+        x4 = 5;
+        document.getElementById("demo20").innerHTML = x4 * 10;
+    </script>
+
+    <p id="demo21"></p>
+
+    <script>
+        document.getElementById("demo21").innerHTML = "John" + " " + "Doe";
+    </script>
+
+    <h2>The <b>let</b> Keyword Creates Variables</h2>
+
+    <p id="demo22"></p>
+
+    <script>
+        let x5, y5;
+        x5 = 55 + 6;
+        y5 = x5 * 10;
+        document.getElementById("demo22").innerHTML = y5;
+    </script>
+
+    <h2>The var Keyword Creates Variables</h2>
+
+    <p id="demo23"></p>
+
+    <script>
+        var x6, y6;
+        x6 = 5 + 6;
+        y6 = x6 * 10;
+        document.getElementById("demo23").innerHTML = y6;
+    </script>
+
+
+    <h2>JavaScript Comments are NOT Executed</h2>
+
+    <p id="demo24"></p>
+
+    <script>
+        let x7;
+        x7 = 5;
+        // x = 6; I will not be executed
+        document.getElementById("demo24").innerHTML = x7;
+    </script>
+
+    <h2>JavaScript is Case Sensitive</h2>
+
+    <p>Try to change lastName to lastname.</p>
+
+    <p id="demo25"></p>
+
+    <script>
+        let lastname, lastName;
+        lastName = "Doe";
+        lastname = "Peterson";
+        document.getElementById("demo25").innerHTML = lastName;
+    </script>
+
+    <mark>Hyphens are not allowed in JavaScript. They are reserved for subtractions.</mark>
+
+
+
+
+
+
+
+</body>
+
+</html>
