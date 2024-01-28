@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>w3school-JS Comment to </title>
+    </head>
+<body>
+    <!-- JavaScript comments can be used to explain JavaScript code, and to make it more readable. -->
+
+    <!-- JavaScript Comments -->
+<h1 id="myH"></h1>
+<p id="myP"></p>
+
+<script>
+// Change heading:
+document.getElementById("myH").innerHTML = "JavaScript Comments";
+// Change paragraph:
+document.getElementById("myP").innerHTML = "My first paragraph.";
+</script>
+
+<h2>JavaScript Comments</h2>
+
+<p id="demo"></p>
+
+<script>
+let x = 5;      // Declare x, give it the value of 5
+let y = x + 2;  // Declare y, give it the value of x + 2 
+
+// Write y to demo:
+document.getElementById("demo").innerHTML = y;
+</script>
+
+
+<h1 id="myH2"></h1>
+<p id="myP2"></p>
+
+<script>
+/*
+The code below will change
+the heading with id = "myH"
+and the paragraph with id = "myP"
+*/
+document.getElementById("myH2").innerHTML = "JavaScript Comments";
+document.getElementById("myP2").innerHTML = "My first paragraph.";
+</script>
+
+<h1 id="myH3"></h1>
+
+<p id="myP3"></p>
+
+<script>
+//document.getElementById("myH3").innerHTML = "My First Page";
+document.getElementById("myP3").innerHTML = "My first paragraph.";
+</script>
+
+<p>The line starting with // is not executed.</p>
+
+<h1 id="myH4"></h1>
+
+<p id="myP4"></p>
+
+<script>
+/*
+document.getElementById("myH4").innerHTML = "Welcome to my Homepage";
+document.getElementById("myP4").innerHTML = "This is my first paragraph.";
+*/
+document.getElementById("myP4").innerHTML = "The comment-block is not executed.";
+</script>
+
+<!-- JavaScript Variables -->
+<h2>Variables are Containers for Storing Data</h2>
+<p>JavaScript Variables can be declared in 4 ways:</p>
+<ul>
+    <li>
+        Automatically
+    </li>
+    <liUsing var</li>
+    <li>Using let</li>
+    <li>Using const</li>
+</ul>
+
+<h1>JavaScript Variables</h1>
+
+<p>In this example, x, y, and z are undeclared.</p>
+<p>They are automatically declared when first used.</p>
+
+<p id="demo26"></p>
+
+<script>
+x = 5;
+y = 6;
+z = x + y;
+document.getElementById("demo26").innerHTML =
+"The value of z is: " + z;
+</script>
+
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo27"></p>
+
+<script>
+var x1 = 5;
+var y1 = 6;
+var z1 = x1 + y1;
+document.getElementById("demo27").innerHTML =
+"The value of z is: " + z1;
+</script>
+
+<mark>The var keyword was used in all JavaScript code from 1995 to 2015.
+
+    The let and const keywords were added to JavaScript in 2015.
+    
+    The var keyword should only be used in code written for older browsers.</mark>
+
+    <p>In this example, x, y, and z are variables.</p>
+
+    <p id="demo28"></p>
+    
+    <script>
+    let x2 = 533;
+    let y2 = 62;
+    let z2 = x2 + y2;
+    document.getElementById("demo28").innerHTML =
+    "The value of z is: " + z2;
+    </script>
+
+<p>In this example, x, y, and z are variables.</p>
+
+<p id="demo29"></p>
+
+<script>
+const x3 = 5;
+const y3 = 644;
+const z3 = x3 + y3;
+document.getElementById("demo29").innerHTML =
+"The value of z is: " + z3;
+</script>
+
+<p>In this example, price1, price2, and total are variables.</p>
+
+<p id="demo30"></p>
+
+<script>
+const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+document.getElementById("demo30").innerHTML =
+"The total is: " + total;
+</script>
+
+<h3>When to Use var, let, or const?</h3>
+<p>1. Always declare variables <br>
+
+    2. Always use const if the value should not be changed <br>
+    
+    3. Always use const if the type should not be changed (Arrays and Objects) <br>
+    
+    4. Only use let if you can't use const <br>
+    
+    5. Only use var if you MUST support old browsers.</p>
+<h2>JavaScript Identifiers</h2>
+<p>All JavaScript variables must be identified with unique names.
+
+    These unique names are called identifiers.
+    
+    Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).</p>
+    <p>The general rules for constructing names for variables (unique identifiers) are:</p>
+    <ul>
+        <li>Names can contain letters, digits, underscores, and dollar signs.</li>
+        <li>Names must begin with a letter.
+            </li>
+        <li>Names can also begin with $ and _ (but we will not use it in this tutorial).</li>
+        <li>Names are case sensitive (y and Y are different variables).</li>
+        <li>Reserved words (like JavaScript keywords) cannot be used as names.</li>
+    </ul>
+
+    <p>Strings are written with quotes.</p>
+<p>Numbers are written without quotes.</p>
+
+<p id="demo31"></p>
+
+<script>
+const pi = 3.14;
+let person = "John Doe";
+let answer = 'Yes I am!';
+
+document.getElementById("demo31").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+</script>
+
+<b>After the declaration, the variable has no value (technically it is undefined).</b>
+<p>Create a variable, assign a value to it, and display it:</p>
+
+<p id="demo32"></p>
+
+<script>
+let carName = "Volvo";
+document.getElementById("demo32").innerHTML = carName;
+</script>
+<mark>It's a good programming practice to declare all variables at the beginning of a script.</mark>
+<p>You can declare many variables in one statement.</p>
+
+<p id="demo33"></p>
+
+<script>
+let person3 = "John Doe", carName3 = "Volvo", price3 = 200;
+document.getElementById("demo33").innerHTML = carName3;
+</script>
+
+<p>You can declare many variables in one statement.</p>
+
+<p id="demo34"></p>
+
+<script>
+let person4 = "John Doe",
+carName4 = "Volvo",
+price4 = 200;
+document.getElementById("demo34").innerHTML = carName4;
+</script>
+
+<b>In computer programs, variables are often declared without a value. The value can be something that has to be calculated, or something that will be provided later, like user input.
+
+    A variable declared without a value will have the value undefined.</b>
+
+    <p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+
+<p id="demo35"></p>
+
+<script>
+var carName5 = "Volvo";
+var carName5;
+document.getElementById("demo35").innerHTML = carName5;
+</script>
+
+<mark>You cannot re-declare a variable declared with let or const.</mark>
+<p>The result of adding 5 + 2 + 3 is:</p>
+<p id="demo36"></p>
+
+<script>
+let x5 = 5 + 2 + 3;
+document.getElementById("demo36").innerHTML = x5;
+</script>
+
+<p>The result of adding "John" + " " + "Doe" is:</p>
+<p id="demo37"></p>
+
+<script>
+let x6 = "John" + " " + "Doe";
+document.getElementById("demo37").innerHTML = x6;
+</script>
+
+<p>The result of adding "5" + 2 + 3 is:</p>
+<p id="demo38"></p>
+
+<script>
+let x7 = "5" + 2 + 3;
+document.getElementById("demo38").innerHTML = x7;
+</script>
+
+<p>The result of adding 2 + 3 + "5" is:</p>
+<p id="demo39"></p>
+
+<script>
+let x8 = 2 + 3 + "5";
+document.getElementById("demo39").innerHTML = x8;
+</script>
+
+<!-- JavaScript Let -->
+<b>The let keyword was introduced in ES6 (2015) <br>
+
+    Variables declared with let have Block Scope <br>
+    
+    Variables declared with let must be Declared before use <br>
+    
+    Variables declared with let cannot be Redeclared in the same scope</b>
+    <h2>Block Scope</h2>
+
+
+
+</body>
+</html>
