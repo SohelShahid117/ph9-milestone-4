@@ -1,4 +1,4 @@
-let number = [1,2,3,6,7,33,22,11];
+let number = [1, 2, 3, 6, 7, 33, 22, 11];
 console.log(number);
 console.log(number.length);
 console.log(number[0]);
@@ -25,9 +25,9 @@ console.log(number);
 console.log(out2);
 
 console.log(number);
-number.shift();
+number.shift();  //shift() cousin of pop()
 console.log(number);
 
 console.log(number);
-number.unshift(887);
+number.unshift(887); //unshift() cousin of push()
 console.log(number);
