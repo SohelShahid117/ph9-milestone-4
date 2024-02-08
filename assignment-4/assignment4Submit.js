@@ -1,5 +1,3 @@
-// console.log(`-------------Prblm-1------------------`);
-
 function  calculateMoney(sellTicketQty){
 
     if(typeof sellTicketQty  !== `number`  || sellTicketQty <0){
@@ -14,15 +12,6 @@ function  calculateMoney(sellTicketQty){
     const profitLoss=ticketSellEarning-regularCost;
     return profitLoss;
 }
-/*
-console.log(calculateMoney(10));
-console.log(calculateMoney(1055));
-console.log(calculateMoney(93));
-console.log(calculateMoney(10));
-console.log(calculateMoney(-130));
-*/
-
-// console.log(`-------------Prblm-2------------------`);
 
 function checkName(strName){
     if(typeof strName !== 'string'){
@@ -39,15 +28,7 @@ function checkName(strName){
         return 'bad name';
     }
 }
-/*
-console.log(checkName(`Salman`));
-console.log(checkName(`RAFEE`));
-console.log(checkName(`Jhankar`));
-console.log(checkName(199));
-console.log(checkName(["Rashed"]));
-*/
 
-// console.log(`-------------Prblm-3------------------`);
 
 function deleteInvalids(arr){
     if(!Array.isArray(arr)){
@@ -61,16 +42,7 @@ function deleteInvalids(arr){
     }
     return arr2;
 }
-/*
-let mixArray = [1,null,undefined,18,-19,NaN,"12",[1,2],{ob:"lala"}];
-let mixArray =  ['1',{num:2},NaN];
-let mixArray =   [1,2,-3];
-let mixArray =   {num:[1,2,3]};
-let z = deleteInvalids(mixArray);
-console.log(z);
-*/
 
-// console.log(`-------------Prblm-4------------------`);
 
 function password(obj){
     if(obj.birthYear.toString().length !==4  || Object.keys(obj).length !==3){
@@ -82,34 +54,6 @@ function password(obj){
     let pw = capitalise + `#` + obj.name + `@` + obj.birthYear;
     return pw;
 }
-
-/*
-let object =  {
-    name:"kolimuddin" ,
-    birthYear:1999,
-    siteName:"GOOGLE"
-}
-//
-let object =  {
-    name:"rahat",
-    birthYear:2002,
-    siteName:"Facebook"
-}
-//
-let object =  {
-    name:"toky",
-    birthYear:200,
-    siteName:"Facebook"
-}
-//
-let object =  {
-    name:"maisha",
-    birthYear:2002
-}
-console.log(password(object));
-*/
-
-// console.log(`-------------Prblm-5------------------`);
 
 function monthlySavings(arr,livingCost){
     if(!Array.isArray(arr) && typeof livingCost !== `number`){
@@ -137,21 +81,3 @@ function monthlySavings(arr,livingCost){
         return savings;
     }
 }
-/*
-//
-let earn =  [1000,2000,3000];
-let cost = 5400;
-//
-let earn =  [1000,2000,2500];
-let cost = 5000;
-//
-let earn =  [900,2700,3400];
-let cost = 10000;
-//
-let earn =  100;
-let cost = [900,2700,3400];
-//
-let input =  [1000,2000,3000];
-let z = monthlySavings(earn,cost);
-console.log(monthlySavings(earn,cost));
-*/
