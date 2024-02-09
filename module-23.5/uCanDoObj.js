@@ -46,3 +46,23 @@ console.log(nayok.act);
 console.log(nayok.act());//nayok.act()--atatei function call hoye jabe,console e undefined dekabe.console e dekate hole function er return value lagbe
 let z = nayok.act();//function er value paite hole tomar function e return dite hobe
 console.log(z);
+
+const std = {
+    name :`Sohel`,
+    age:32,
+    profession:`business`
+}
+// for(let i=0;i<Object.keys(std).length;i++){
+//     console.log(std[i]);
+//     console.log(std.i);
+// }
+
+for(let item in std){
+    console.log(std[item]);
+    console.log(item + ":" + std[item]);
+}
+console.log(`----------------`);
+console.log(Object.keys(std).length);
+console.log(Object.keys(std));
+console.log(Object.values(std));
+console.log(Object.keys(std).length);
